@@ -4,4 +4,6 @@ body {
   font-family: Arial, sans-serif;
   letter-spacing: 3px;
   overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
 }
