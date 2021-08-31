@@ -7,7 +7,10 @@ const FooterDiv = styled.div`
   flex-direction: row;
   height: 25%;
   width: 100%;
-  margin-bottom: 15px;
+
+  @media (max-width: 415px) {
+    margin-bottom: 15px;
+  }
 `;
 
 const Footer = () => {
