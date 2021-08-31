@@ -10,7 +10,8 @@ const AppContainer = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
+  overflow-y: scroll;
 `;
 
 function App() {

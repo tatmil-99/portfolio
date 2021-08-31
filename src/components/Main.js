@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainDiv = styled.div`
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   height: 50%;
-  max-width: 100%;
+  width: 100%;
 `;
 
 const Main = () => {
