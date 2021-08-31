@@ -6,7 +6,7 @@ const MainDiv = styled.div`
   display: flex;
   flex-direction: row;
   height: 50%;
-  width: 100%;
+  max-width: 100%;
 `;
 
 const Main = () => {

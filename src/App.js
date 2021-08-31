@@ -10,7 +10,7 @@ const AppContainer = styled.div`
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
 `;
 
 function App() {
