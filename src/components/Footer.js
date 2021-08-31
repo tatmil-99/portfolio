@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterDiv = styled.div`
-  background-color: green;
+  background-color: rgb(47, 48, 59);
   display: flex;
   flex-direction: row;
   height: 25%;
   width: 100%;
-  
+  margin-bottom: 15px;
 `;
 
 const Footer = () => {
