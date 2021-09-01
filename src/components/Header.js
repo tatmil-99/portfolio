@@ -4,17 +4,40 @@ import styled from 'styled-components';
 const HeaderDiv = styled.div`
   background-color: rgb(255, 255, 255);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 25%; */
+  width: 100%;
+  margin: 60px 0px 0px 0px;
+
+  h1 {
+    font-weight: 575;
+    margin: 20px 0px 0px 0px;
+  }
+`;
+
+const BioDiv = styled.div`
+  font-size: 1em;
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 25%;
-  width: 100%;
-  border-bottom: 1px solid black;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px 15px;
 `;
 
 const Header = () => {
   return (
     <HeaderDiv>
       <h1>Tatien Miller</h1>
+      <BioDiv>
+        <p>
+          Full Stack Developer + Coding Mentor + 
+          Coffee Connoisseur + Future Entreprenuer and 
+          Digital Nomad + Digital Artist
+        </p>
+      </BioDiv>
     </HeaderDiv>
   )
 }
