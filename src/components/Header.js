@@ -38,7 +38,7 @@ const Header = () => {
         <p>
           <Emoji symbol='🧑‍💻' /> Full Stack Developer + Coding Mentor + 
           Coffee Connoisseur + Future Entreprenuer and 
-          Digital Nomad + Digital Artist
+          Digital Nomad + Digital Artist <Emoji symbol='🛠️' /><Emoji symbol='🚀' />
         </p>
       </BioDiv>
     </HeaderDiv>
