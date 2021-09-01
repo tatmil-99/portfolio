@@ -18,12 +18,14 @@ const HeaderDiv = styled.div`
 `;
 
 const BioDiv = styled.div`
-  font-size: 1em;
+  /* font-size: 1em; */
   margin: 10px 17px;
   
   p {
+    color: rgb(107, 122, 144);
     text-align: center;
     line-height: 1.5;
+    font-size: 1em;
   }
 `;
 
