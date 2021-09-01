@@ -9,22 +9,22 @@ const HeaderDiv = styled.div`
   align-items: center;
   /* height: 25%; */
   width: 100%;
-  margin: 60px 0px 0px 0px;
+  margin: 70px 0px 0px 0px;
 
   h1 {
-    font-weight: 575;
-    margin: 20px 0px 0px 0px;
+    font-weight: 550;
+    margin: 30px 0px 0px 0px;
   }
 `;
 
 const BioDiv = styled.div`
   font-size: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 10px 15px;
+  margin: 10px 17px;
+  
+  p {
+    text-align: center;
+    line-height: 1.5;
+  }
 `;
 
 const Header = () => {
