@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Emoji from './Emoji';
 
 const HeaderDiv = styled.div`
   background-color: rgb(255, 255, 255);
@@ -35,7 +36,7 @@ const Header = () => {
       <h1>Tatien Miller</h1>
       <BioDiv>
         <p>
-          Full Stack Developer + Coding Mentor + 
+          <Emoji symbol='🧑‍💻' /> Full Stack Developer + Coding Mentor + 
           Coffee Connoisseur + Future Entreprenuer and 
           Digital Nomad + Digital Artist
         </p>
