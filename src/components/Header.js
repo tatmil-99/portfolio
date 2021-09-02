@@ -2,13 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
 
-const HeaderDiv = styled.div`
-  background-color: rgb(255, 255, 255);
+const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 25%; */
+`;
+
+const HeaderDiv = styled(FlexExtended)`
+  background-color: rgb(255, 255, 255);
   width: 100%;
   margin: 70px 0px 0px 0px;
 
@@ -19,7 +21,6 @@ const HeaderDiv = styled.div`
 `;
 
 const BioDiv = styled.div`
-  /* font-size: 1em; */
   margin: 10px 17px;
   
   p {
@@ -30,15 +31,28 @@ const BioDiv = styled.div`
   }
 `;
 
-const ButtonDivs = styled.div`
+const ButtonDivs = styled(FlexExtended)`
 
 `;
 
-const ResumeBtn = styled.div`
-
+const ResumeBtn = styled.button`
+  background-color: rgb(103, 54, 221);
+  font-size: .70em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px 32px;
+  cursor: pointer;
+  width: 100%;
+  margin: 16px 16px;
+  letter-spacing: .1em;
 `;
 
-const DarkBtn = styled.div`
+const LightsToggle = styled.div`
 
 `;
 
@@ -50,15 +64,13 @@ const Header = () => {
         <p>
           <Emoji symbol='🧑‍💻' /> Full Stack Developer + Coding Mentor + 
           Coffee Connoisseur + Future Entreprenuer and 
-          Digital Nomad + Digital Artist <Emoji symbol='🛠️' /><Emoji symbol='🚀' />
+          Digital Nomad + Digital Mechanic <Emoji symbol='🛠️' /><Emoji symbol='🚀' />
         </p>
         <ButtonDivs>
-          <ResumeBtn>
+          <ResumeBtn>My Resume</ResumeBtn>
+          <LightsToggle>
 
-          </ResumeBtn>
-          <DarkBtn>
-            
-          </DarkBtn>
+          </LightsToggle>
         </ButtonDivs>
       </BioDiv>
     </HeaderDiv>
