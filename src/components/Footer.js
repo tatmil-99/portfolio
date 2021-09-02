@@ -8,9 +8,9 @@ const FooterDiv = styled.div`
   height: 25%;
   width: 100%;
 
-  @media (max-width: 415px) {
+  /* @media (max-width: 415px) {
     margin-bottom: 15px;
-  }
+  } */
 `;
 
 const Footer = () => {

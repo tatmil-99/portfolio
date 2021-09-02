@@ -1,8 +1,12 @@
 import './App.css';
+import React, { useState, useEffect } from "react";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import styled from 'styled-components';
+import {ThemeProvider} from "styled-components";
+import { GlobalStyles } from "./components/GlobalStyle";
+import { lightTheme, darkTheme } from "./components/Themes"
 
 const AppContainer = styled.div`
   display: flex;
@@ -15,12 +19,24 @@ const AppContainer = styled.div`
 `;
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
+
   return (
-    <AppContainer>
-      <Header />
-      <Main />
-      <Footer />
-    </AppContainer>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme} >
+      <>
+      <GlobalStyles />
+        <AppContainer>
+          <button onClick={themeToggler}>Switch Theme</button>
+          <Header />
+          <Main />
+          <Footer />
+        </AppContainer>
+      </>
+    </ThemeProvider>
   );
 }
 

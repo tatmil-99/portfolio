@@ -10,7 +10,7 @@ const FlexExtended = styled.div`
 `;
 
 const HeaderDiv = styled(FlexExtended)`
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   width: 100%;
   margin: 70px 0px 0px 0px;
 
@@ -57,6 +57,7 @@ const LightsToggle = styled.div`
 `;
 
 const Header = () => {
+
   return (
     <HeaderDiv>
       <h1>Tatien Miller</h1>

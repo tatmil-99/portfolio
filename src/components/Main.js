@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainDiv = styled.div`
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: row;
   height: 50%;
