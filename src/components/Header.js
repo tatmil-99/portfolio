@@ -30,6 +30,18 @@ const BioDiv = styled.div`
   }
 `;
 
+const ButtonDivs = styled.div`
+
+`;
+
+const ResumeBtn = styled.div`
+
+`;
+
+const DarkBtn = styled.div`
+
+`;
+
 const Header = () => {
   return (
     <HeaderDiv>
@@ -40,6 +52,14 @@ const Header = () => {
           Coffee Connoisseur + Future Entreprenuer and 
           Digital Nomad + Digital Artist <Emoji symbol='🛠️' /><Emoji symbol='🚀' />
         </p>
+        <ButtonDivs>
+          <ResumeBtn>
+
+          </ResumeBtn>
+          <DarkBtn>
+            
+          </DarkBtn>
+        </ButtonDivs>
       </BioDiv>
     </HeaderDiv>
   )
