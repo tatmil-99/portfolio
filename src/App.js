@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -21,8 +21,23 @@ const AppContainer = styled.div`
 function App() {
   const [theme, setTheme] = useState('light');
 
+  // FUNCTION THAT CHANGES BACKGROUND TO DARK OR LIGHT BASED ON STATE
   const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
+    theme === 'light' ? setTheme('dark') : setTheme('light');
+  }
+  
+  const [btnLabel, setBtnLabel] = useState('Go Dark');
+
+  // FUNCTION THAT CHANGES THEME BUTTON LABEL TO DARK OR LIGHT BASED ON STATE
+  const changeBtnLabel = () => {
+    btnLabel === 'Go Dark' ? setBtnLabel('Go Light') : setBtnLabel('Go Dark');
+  }
+
+  const addEmoji = (theme) => {
+    if (theme === 'light') {
+      return '🌜'
+    }
+    return '🌞'
   }
 
   return (
@@ -30,7 +45,11 @@ function App() {
       <>
       <GlobalStyles />
         <AppContainer>
-          <button onClick={themeToggler}>Switch Theme</button>
+            <button 
+              onClick={() => [themeToggler(), changeBtnLabel()]}>
+                {btnLabel}
+                <span role="img">{addEmoji(theme)}</span>
+            </button>
           <Header />
           <Main />
           <Footer />
