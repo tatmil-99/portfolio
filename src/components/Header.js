@@ -52,9 +52,7 @@ const ResumeBtn = styled.button`
   letter-spacing: .1em;
 `;
 
-const LightsToggle = styled.div`
 
-`;
 
 const Header = () => {
 
@@ -69,9 +67,6 @@ const Header = () => {
         </p>
         <ButtonDivs>
           <ResumeBtn>My Resume</ResumeBtn>
-          <LightsToggle>
-
-          </LightsToggle>
         </ButtonDivs>
       </BioDiv>
     </HeaderDiv>

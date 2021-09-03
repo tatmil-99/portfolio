@@ -10,3 +10,4 @@ export const darkTheme = {
   // toggleBorder: '#6B8096',
   background: 'rgb(153, 153, 153)',
 }
+
