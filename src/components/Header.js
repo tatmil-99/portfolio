@@ -66,8 +66,8 @@ const Header = () => {
           Digital Nomad + Digital Mechanic <Emoji symbol='🛠️' /><Emoji symbol='🚀' />
         </p>
         <ButtonDivs>
-          <ResumeBtn onClick={(e) => {e.preventDefault();
-      window.location.href='https://docs.google.com/document/d/1NjrPNY6_sjMBF_IkvJ-zgtfdAO2cRcwTrAUkq8JIk6I/edit?usp=sharing';}}>My Resume</ResumeBtn>
+          <ResumeBtn onClick={(e) => {e.preventDefault()
+      window.open('https://docs.google.com/document/d/1NjrPNY6_sjMBF_IkvJ-zgtfdAO2cRcwTrAUkq8JIk6I/edit?usp=sharing')}}>My Resume</ResumeBtn>
         </ButtonDivs>
       </BioDiv>
     </HeaderDiv>
