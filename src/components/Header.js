@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
+import user from '../assets/user.png';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -52,6 +53,17 @@ const ResumeBtn = styled.button`
   letter-spacing: .1em;
 `;
 
+const HeadShot = styled(FlexExtended)`
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px 50px 0px;
+
+  img {
+    margin: 30px 0px 30px 0px;
+    height: 12em;
+    width: 12em;
+  }
+`;
 
 
 const Header = () => {
@@ -72,6 +84,9 @@ const Header = () => {
           </ResumeBtn>
         </ButtonDivs>
       </BioDiv>
+      <HeadShot>
+        <img src={user} />
+      </HeadShot>
     </HeaderDiv>
   )
 }
