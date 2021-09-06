@@ -8,5 +8,4 @@ body {
   width: 100%;
   /* background-color: rgb(255, 255, 255); */
   overscroll-behavior-x: none;
-  position: relative;
 }
