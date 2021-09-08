@@ -15,9 +15,10 @@ const HeaderDiv = styled(FlexExtended)`
   width: 100%;
   margin: 70px 0px 0px 0px;
 
-  h1 {
+  h2 {
     font-weight: 550;
     margin: 30px 0px 0px 0px;
+    font-size: 37px;
   }
 `;
 
@@ -70,7 +71,7 @@ const Header = () => {
 
   return (
     <HeaderDiv>
-      <h1>Tatien Miller</h1>
+      <h2>Tatien Miller</h2>
       <BioDiv>
         <p>
           <Emoji symbol='🧑‍💻' /> Full Stack Developer + Coding Mentor + 
@@ -85,7 +86,7 @@ const Header = () => {
         </ButtonDivs>
       </BioDiv>
       <HeadShot>
-        <img src={user} />
+        <img alt='headshot of me' src={user} />
       </HeadShot>
     </HeaderDiv>
   )
