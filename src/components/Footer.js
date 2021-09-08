@@ -8,7 +8,7 @@ const FooterDiv = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 50px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   color: rgb(107, 122, 144);
 
     /* @media (max-width: 415px) {

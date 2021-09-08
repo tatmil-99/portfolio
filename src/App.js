@@ -17,7 +17,7 @@ const FlexExtended = styled.div`
 const AppContainer = styled(FlexExtended)`
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   overflow-y: scroll;
 `;
