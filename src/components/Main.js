@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Emoji from './Emoji';
 import ProjectContent from './ProjectContent';
 
 const FlexExtended = styled.div`
@@ -34,7 +35,13 @@ const StoryDiv = styled(FlexExtended)`
 `;
 
 const ProjectsContainer = styled(FlexExtended)`
+  margin-bottom: 80px;
 
+  h2 {
+      margin: 0 0 29px;
+      font-size: 32px;
+      font-weight: 550;
+    }
 `;
 
 
@@ -46,7 +53,7 @@ const Main = () => {
         <p> My name is Tatien Miller and I am a certified full-stack developer -- with an emphasis in front-end development -- for now. My digital journey began in college, pre-covid, where I was studying business. Listed in the required courses to take was Computer Science 101. I quickly discovered I loved solving the cryptic coding errors that would arise in homework. Unfortunately, this experience was cut short by Covid. It was then after this I decided to attend a virtual coding bootcamp. Although hard, bootcamp solidified my interest in programming and web development. Since my graduation, my time has been spent learning and building projects... like this portfolio you are viewing!</p>
       </StoryDiv>
       <ProjectsContainer>
-        <h2>Projects</h2>
+        <h2><Emoji symbol='👉' /> Projects</h2>
         <ProjectContent />
       </ProjectsContainer>
     </MainDiv>
