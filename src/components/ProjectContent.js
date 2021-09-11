@@ -12,6 +12,11 @@ const FlexExtended = styled.div`
 
 const ProjectContentDiv = styled(FlexExtended)`
   background-color: rgb(47, 48, 59);
+  box-sizing: border-box;
+  margin: 10px 17px;
+  width: 90vw;
+  height: 400px;
+  border-radius: 2px;
 
   h3 {
     /* color: rgb(255, 255, 255); */
