@@ -17,6 +17,7 @@ const ProjectContentDiv = styled(FlexExtended)`
   width: 90vw;
   height: 400px;
   border-radius: 2px;
+  padding: 25px;
 
   h3 {
     /* color: rgb(255, 255, 255); */
@@ -24,6 +25,7 @@ const ProjectContentDiv = styled(FlexExtended)`
     color: rgb(103, 54, 221);
     /* color: rgb(252,15,192); */
     /* border-bottom: 2px solid rgb(252,15,192); */
+    margin: 10px 0 10px;
   }
 `;
 
