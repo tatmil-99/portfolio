@@ -14,7 +14,7 @@ const ProjectDescriptionDiv = styled(FlexExtended)`
     color: rgb(107, 122, 144);
     padding: 20px 0 20px;
     margin: 0;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     font-size: 1em;
   }
