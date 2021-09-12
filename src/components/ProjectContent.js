@@ -15,7 +15,7 @@ const ProjectContentDiv = styled(FlexExtended)`
   box-sizing: border-box;
   margin: 10px 17px;
   width: 90vw;
-  height: 400px;
+  /* height: 400px; */
   border-radius: 2px;
   padding: 25px 25px;
   
