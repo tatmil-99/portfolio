@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { ExternalLink } from 'react-external-link';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -8,17 +9,22 @@ const FlexExtended = styled.div`
 `;
 
 const ProjectLinksDiv = styled(FlexExtended)`
-  color: rgb(107, 122, 144);
   padding: 10px 10px;
   width: 100%;
   text-align: left;
+`;
+
+const MyIcon = styled(GitHubIcon)`
+  color: rgb(107, 122, 144);
 `;
 
 
 const ProjectLinks = () => {
   return (
     <ProjectLinksDiv>
-      <GitHubIcon style={{fontSize: 30}} />
+      <ExternalLink href='https://github.com/tatmil-99/The-Bean'>
+        <MyIcon style={{fontSize: 30}} />
+      </ExternalLink>
     </ProjectLinksDiv>
   )
 }
