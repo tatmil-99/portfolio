@@ -35,8 +35,12 @@ const ProjectContent = () => {
   return (
     <ProjectContentDiv>
       <h3>The Bean</h3>
-      <ProjectDescription />
-      <ProjectLinks />
+      <ProjectDescription
+        description={'A e-commerce web app that sells coffee beans. Made to mimic realworld apps and practice data management.'}
+      />
+      <ProjectLinks>
+
+      </ProjectLinks>
     </ProjectContentDiv>
   )
 }

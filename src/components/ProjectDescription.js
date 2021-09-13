@@ -36,10 +36,10 @@ const ProjectDescriptionDiv = styled(FlexExtended)`
   }
 `;
 
-const ProjectDescription = () => {
+const ProjectDescription = (props) => {
   return (
     <ProjectDescriptionDiv>
-      <p>A e-commerce web app that sells coffee beans. Made to mimic realworld apps and practice data management. </p>
+      <p className='description'>{props.description}</p>
       <ul>
         <li>React</li>
         <li>Redux</li>
