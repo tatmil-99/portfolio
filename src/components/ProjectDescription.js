@@ -5,7 +5,7 @@ const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
+  align-items: flex-start;
 `;
 
 const ProjectDescriptionDiv = styled(FlexExtended)`
@@ -26,12 +26,13 @@ const ProjectDescriptionDiv = styled(FlexExtended)`
     list-style:none;
     justify-content: center;
     padding: 0; */
-    float: left;
+    /* float: left; */
+    text-align: left;
     list-style: none;
     padding: 0;
     word-spacing: 5px;
     line-height: 1.3;
-    margin: 5px 0 5px;
+    margin: 5px 0 5px 50px;
     color: rgb(252,15,192);
   }
 `;
