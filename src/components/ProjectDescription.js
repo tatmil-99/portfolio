@@ -41,8 +41,9 @@ const ProjectDescription = (props) => {
     <ProjectDescriptionDiv>
       <p className='description'>{props.description}</p>
       <ul>
-        {props.listItem.map((i) => {
-          return <li>{i}</li>
+        {
+          props.listItem.map((i) => {
+            return <li>{i}</li>
           })
         }
       </ul>
