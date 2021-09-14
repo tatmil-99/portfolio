@@ -37,10 +37,12 @@ const ProjectContent = () => {
       <h3>The Bean</h3>
       <ProjectDescription
         description={'A e-commerce web app that sells coffee beans. Made to mimic realworld apps and practice data management.'}
+        listItem={['React', 'Redux', 'StyledComponents', 'JavaScript']}
+        
       />
-      <ProjectLinks>
+      <ProjectLinks
 
-      </ProjectLinks>
+      />
     </ProjectContentDiv>
   )
 }

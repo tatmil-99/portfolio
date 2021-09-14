@@ -41,10 +41,10 @@ const ProjectDescription = (props) => {
     <ProjectDescriptionDiv>
       <p className='description'>{props.description}</p>
       <ul>
-        <li>React</li>
-        <li>Redux</li>
-        <li>StyledComponents</li>
-        <li>JavaScript</li>
+        {props.listItem.map((i) => {
+          return <li>{i}</li>
+          })
+        }
       </ul>
     </ProjectDescriptionDiv>
   )
