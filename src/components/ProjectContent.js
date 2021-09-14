@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import ProjectDescription from './ProjectDescription';
 import ProjectLinks from './ProjectLinks';
+import {projects} from '../data'
 
 const FlexExtended = styled.div`
   display: flex;
@@ -32,14 +33,20 @@ const ProjectContentDiv = styled(FlexExtended)`
 
 
 const ProjectContent = () => {
+  console.log()
   return (
     <ProjectContentDiv>
-      <h3>The Bean</h3>
-      <ProjectDescription
+      <h3>{projects[0].title}</h3>
+      {/* <ProjectDescription
         description={'A e-commerce web app that sells coffee beans. Made to mimic realworld apps and practice data management.'}
         listItem={['React', 'Redux', 'StyledComponents', 'JavaScript']}
         
-      />
+      /> */}
+
+        <ProjectDescription 
+          description={projects[0].description}
+          listItem={projects[0].technologies}
+        />
       <ProjectLinks
 
       />
