@@ -37,12 +37,6 @@ const ProjectContent = () => {
   return (
     <ProjectContentDiv>
       <h3>{projects[0].title}</h3>
-      {/* <ProjectDescription
-        description={'A e-commerce web app that sells coffee beans. Made to mimic realworld apps and practice data management.'}
-        listItem={['React', 'Redux', 'StyledComponents', 'JavaScript']}
-        
-      /> */}
-
         <ProjectDescription 
           description={projects[0].description}
           listItem={projects[0].technologies}
