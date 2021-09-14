@@ -33,19 +33,20 @@ const ProjectContentDiv = styled(FlexExtended)`
 
 
 const ProjectContent = () => {
-  console.log()
   return (
-    <ProjectContentDiv>
-      <h3>{projects[0].title}</h3>
-        <ProjectDescription 
-          description={projects[0].description}
-          listItem={projects[0].technologies}
-        />
-      <ProjectLinks
-
-      />
-    </ProjectContentDiv>
-  )
+    projects.map((item) => {
+      return (
+        <ProjectContentDiv>
+          <h3>{item.title}</h3>
+          <ProjectDescription
+            description={item.description}
+            listItem={item.technologies}
+          />
+          <ProjectLinks />
+        </ProjectContentDiv>
+      );
+    })
+  );
 }
 
 export default ProjectContent
