@@ -19,10 +19,10 @@ const MyIcon = styled(GitHubIcon)`
 `;
 
 
-const ProjectLinks = () => {
+const ProjectLinks = (props) => {
   return (
     <ProjectLinksDiv>
-      <ExternalLink href='https://github.com/tatmil-99/The-Bean'>
+      <ExternalLink href={props.link}>
         <MyIcon style={{fontSize: 30}} />
       </ExternalLink>
     </ProjectLinksDiv>

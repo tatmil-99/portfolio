@@ -43,7 +43,9 @@ const ProjectContent = () => {
             description={item.description}
             listItem={item.technologies}
           />
-          <ProjectLinks />
+          <ProjectLinks 
+            link={item.link}
+          />
         </ProjectContentDiv>
       );
     })
