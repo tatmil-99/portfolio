@@ -44,6 +44,8 @@ const ProjectsContainer = styled(FlexExtended)`
     }
 `;
 
+const SkillsContainer = styled(ProjectsContainer)``;
+
 
 const Main = () => {
   return (
@@ -56,6 +58,9 @@ const Main = () => {
         <h2><Emoji symbol='👉' /> Projects</h2>
         <ProjectContent />
       </ProjectsContainer>
+      <SkillsContainer>
+        <h2><Emoji symbol='🏆' /> Skills <Emoji symbol='🏆' /></h2>
+      </SkillsContainer>
     </MainDiv>
   )
 }
