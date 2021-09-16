@@ -33,9 +33,9 @@ const ProjectContentDiv = styled(FlexExtended)`
 
 
 const ProjectContent = () => {
+
   return (
     projects.map((item) => {
-
       return (
         <ProjectContentDiv>
           <h3>{item.title}</h3>
@@ -45,6 +45,7 @@ const ProjectContent = () => {
           />
           <ProjectLinks 
             link={item.link}
+            liveLink={item.liveLink}
           />
         </ProjectContentDiv>
       );
