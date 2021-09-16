@@ -13,5 +13,18 @@ export const projects = [
     technologies: ['Bootstrap', 'Node.js', 'JavaScript', 'Passport.js', 'PostgreSQL'],
     link: 'https://github.com/Zantosko/DevKit-Study-Tool',
   },
-  
+  {
+    title: 'OnlyFriends',
+    description: 
+      'A future messaging app for gamers, unfinished for now, but had the privilege to contribute to codebase and build the back-end.',
+    technologies: ['Node.js', 'Express.js','Sequelize', 'PostgreSQL', 'Bcrypt'],
+    link: 'https://github.com/tatmil-99/onlyFriends',
+  },
+  {
+    title: 'Weather Page',
+    description: 
+      'A web app that fetches data about the weather based on location, and returns said data in a fun, dynamic way. Solely built.',
+    technologies: ['Bootstrap', 'JavaScript', 'HTML', 'CSS'],
+    link: 'https://github.com/tatmil-99/weatherApp',
+  },
 ]
