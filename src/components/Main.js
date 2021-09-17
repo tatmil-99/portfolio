@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
 import ProjectContent from './ProjectContent';
+import Skills from './Skills';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -60,9 +61,10 @@ const Main = () => {
       </ProjectsContainer>
       <SkillsContainer>
         <h2><Emoji symbol='🏆' /> Skills <Emoji symbol='🏆' /></h2>
+        <Skills />
       </SkillsContainer>
     </MainDiv>
-  )
+  );
 }
 
-export default Main
+export default Main;

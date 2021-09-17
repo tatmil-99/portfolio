@@ -25,7 +25,7 @@ const Footer = () => {
     <FooterDiv>
       <p>Created by Tatien Miller</p>
     </FooterDiv>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

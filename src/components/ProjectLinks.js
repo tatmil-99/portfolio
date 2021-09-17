@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
@@ -47,7 +47,7 @@ const ProjectLinks = (props) => {
       </MyExternalLink>
       {toAppLink()}
     </ProjectLinksDiv>
-  )
+  );
 }
 
-export default ProjectLinks
+export default ProjectLinks;

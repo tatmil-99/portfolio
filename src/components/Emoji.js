@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Emoji = (props) => {
   return (
@@ -13,4 +13,4 @@ const Emoji = (props) => {
   );
 }
 
-export default Emoji
+export default Emoji;

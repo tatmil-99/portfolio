@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import ProjectDescription from './ProjectDescription';
 import ProjectLinks from './ProjectLinks';
-import {projects} from '../data'
+import {projects} from '../data';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -53,4 +53,4 @@ const ProjectContent = () => {
   );
 }
 
-export default ProjectContent
+export default ProjectContent;

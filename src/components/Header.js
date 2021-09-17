@@ -89,7 +89,7 @@ const Header = () => {
         <img alt='headshot of me' src={user} />
       </HeadShot>
     </HeaderDiv>
-  )
+  );
 }
 
-export default Header
+export default Header;

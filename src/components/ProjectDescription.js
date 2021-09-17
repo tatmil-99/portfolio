@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const FlexExtended = styled.div`
@@ -49,7 +49,7 @@ const ProjectDescription = (props) => {
         }
       </ul>
     </ProjectDescriptionDiv>
-  )
+  );
 }
 
-export default ProjectDescription
+export default ProjectDescription;
