@@ -32,3 +32,9 @@ export const projects = [
     liveLink: 'https://tatmil-99.github.io/weatherApp/',
   },
 ]
+
+export const skills = [
+  'JavaScript ES6','React', 'Redux', 'Node.js', 
+  'PostgreSQL', 'Sequelize', 'HTML5', 'CSS3', 
+  'Flexbox', 'Grid', 'Media Queries'
+]
