@@ -15,9 +15,18 @@ const SkillsContent = styled(FlexExtended)`
 `;
 
 const Skills = () => {
+  const returnSkills = (skill) => {
+    return <li>{skill}</li>
+  }
+
   return (
     <SkillsContent>
-
+      <ul>
+        {
+          skills.map((skill) => 
+            returnSkills(skill))
+        }
+      </ul>
     </SkillsContent>
   );
 }

@@ -34,7 +34,7 @@ export const projects = [
 ]
 
 export const skills = [
-  'JavaScript ES6','React', 'Redux', 'Node.js', 
+  'JavaScript ES6', 'Python', 'React', 'Redux', 'Node.js', 
   'PostgreSQL', 'Sequelize', 'HTML5', 'CSS3', 
   'Flexbox', 'Grid', 'Media Queries'
 ]
