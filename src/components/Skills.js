@@ -14,24 +14,15 @@ const SkillsContent = styled(FlexExtended)`
 
 `;
 
-const Skills = () => {
-  const returnSkills = (skills, i) => {
-    return <li>{skills[i]}</li>
-  }
 
-  const gatherSkills = () => {
-    for (let i = 0; i < skills.length; i++) {
-      returnSkills(skills, i);
-    }
-  }
+const Skills = () => {
+
 
   return (
     <SkillsContent>
       <ul>
         {
-          // skills.map((skill) => 
-          //   returnSkills(skill))
-          gatherSkills()
+         
         }
       </ul>
     </SkillsContent>
