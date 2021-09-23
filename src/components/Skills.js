@@ -17,18 +17,16 @@ const SkillsContent = styled(FlexExtended)`
 
 const Skills = () => {
 
-  const returnSkill = () => {
-
-    for (let i = 0; i < skills.length; i++) {
-      return skills[i];
-    }
-  }
-
   return (
     <SkillsContent>
       <ul>
         {
-         returnSkill()
+          skills.map((skill) => {
+
+            return (
+              <li>{skill}</li>
+            );
+          })
         }
       </ul>
     </SkillsContent>

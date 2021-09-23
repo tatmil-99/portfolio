@@ -38,13 +38,17 @@ const ProjectDescriptionDiv = styled(FlexExtended)`
 `;
 
 const ProjectDescription = (props) => {
+
   return (
     <ProjectDescriptionDiv>
       <p className='description'>{props.description}</p>
       <ul>
         {
           props.listItem.map((i) => {
-            return <li>{i}</li>
+            
+            return (
+              <li>{i}</li>
+            );
           })
         }
       </ul>
