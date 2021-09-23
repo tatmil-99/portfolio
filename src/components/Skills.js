@@ -6,12 +6,21 @@ import {skills} from '../data';
 const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 `;
 
 const SkillsContent = styled(FlexExtended)`
 
+  ul {
+    list-style: none;
+    /* word-spacing: 5px; */
+    /* letter-spacing: .1em; */
+    line-height: 1.5;
+    text-align: left;
+    padding: 0;
+    
+  }
 `;
 
 
@@ -24,7 +33,7 @@ const Skills = () => {
           skills.map((skill) => {
 
             return (
-              <li>{skill}</li>
+              <li><Emoji symbol='✅' /> {skill}</li>
             );
           })
         }
