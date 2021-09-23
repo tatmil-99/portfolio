@@ -1,4 +1,4 @@
-export const projects = [
+let projects = [
   {
     title: 'The Bean',
     description: 
@@ -33,8 +33,29 @@ export const projects = [
   },
 ]
 
-export const skills = [
+let skills = [
   'JavaScript ES6', 'Python', 'React', 'Redux', 'Node.js', 
   'PostgreSQL', 'Sequelize', 'HTML5', 'CSS3', 
   'Flexbox', 'Grid', 'Media Queries'
 ]
+
+let socialLinks = [
+  {
+    account: 'GitHub', 
+    link: 'https://github.com/tatmil-99',
+  },
+  {
+    account: 'Twitter', 
+    link: 'https://twitter.com/TatienM',
+  },
+  {
+    account: 'LinkedIn', 
+    link: 'https://www.linkedin.com/in/tatien-miller-30744220a/',
+  },
+  {
+    account: 'Blog', 
+    link: 'https://tatmil99.medium.com/',
+  },
+]
+
+export {projects, skills, socialLinks};
