@@ -16,7 +16,7 @@ const FlexExtended = styled.div`
 const FooterDiv = styled(FlexExtended)`
   background-color: rgb(47, 48, 59);
   width: 100%;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px;
   color: rgb(107, 122, 144);
 
     /* @media (max-width: 415px) {
@@ -29,10 +29,29 @@ const FooterDiv = styled(FlexExtended)`
 `;
 
 const LinksContainer = styled(FlexExtended)`
-  flex-direction: row;
+  padding: 15px;
+  
+  ul {
+    margin: 15px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 15px 0;
+    }
+  }
 `;
 
-const CreditsContainer = styled(FlexExtended)``;
+const CreditsContainer = styled(FlexExtended)`
+  padding: 15px;
+  
+  p {
+    margin: 0 0 15px;
+  }
+`;
 
 const MyGitHubIcon = styled(GitHubIcon)`
   color: rgb(107, 122, 144);
@@ -52,37 +71,45 @@ const Footer = () => {
   return (
     <FooterDiv>
       <LinksContainer>
-        {
-          socialLinks.map((link) => {
-            switch (link.account) {
-              case 'GitHub':
+        <ul>
+          {
+            socialLinks.map((link) => {
+              switch (link.account) {
+                case 'GitHub':
 
-                return (
-                  <ExternalLink href={link.link}>
-                    <MyGitHubIcon style={{fontSize: 30}} />
-                  </ExternalLink>
-                );
-              case 'Twitter':
+                  return (
+                    <li>
+                      <ExternalLink href={link.link}>
+                        <MyGitHubIcon style={{fontSize: 30}} />
+                      </ExternalLink>
+                    </li>
+                  );
+                case 'Twitter':
 
-                return (
-                  <ExternalLink href={link.link}>
-                    <MyTwitterIcon style={{fontSize: 30}} />
-                  </ExternalLink>
-                );
-              case 'LinkedIn':
+                  return (
+                    <li>
+                      <ExternalLink href={link.link}>
+                        <MyTwitterIcon style={{fontSize: 30}} />
+                      </ExternalLink>
+                    </li>
+                  );
+                case 'LinkedIn':
 
-                return (
-                  <ExternalLink href={link.link}>
-                    <MyLinkedInIcon style={{fontSize: 30}} />
-                  </ExternalLink>
-                );
-              default:
-                return (
-                  null
-                );
-            }
-          })
-        }
+                  return (
+                    <li>
+                      <ExternalLink href={link.link}>
+                        <MyLinkedInIcon style={{fontSize: 30}} />
+                      </ExternalLink>
+                    </li>
+                  );
+                default:
+                  return (
+                    null
+                  );
+              }
+            })
+          }
+        </ul>
       </LinksContainer>
       <CreditsContainer>
         <p>Designed & Built by Tatien Miller</p>
