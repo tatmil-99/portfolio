@@ -50,6 +50,7 @@ const CreditsContainer = styled(FlexExtended)`
   
   p {
     margin: 0 0 15px;
+    font-size: .9em;
   }
 `;
 
