@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import {socialLinks} from '../data';
 import { ExternalLink } from 'react-external-link';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArticleIcon from '@mui/icons-material/Article';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -41,6 +42,10 @@ const LinksContainer = styled(FlexExtended)`
 
     li {
       margin: 0 15px 0;
+
+      p {
+        text-decoration: none;
+      }
     }
   }
 `;
@@ -63,6 +68,10 @@ const MyTwitterIcon = styled(TwitterIcon)`
 `;
 
 const MyLinkedInIcon = styled(LinkedInIcon)`
+  color: rgb(107, 122, 144);
+`;
+
+const BlogIcon = styled(ArticleIcon)`
   color: rgb(107, 122, 144);
 `;
 
@@ -103,6 +112,15 @@ const Footer = () => {
                       </ExternalLink>
                     </li>
                   );
+                case 'Blog':
+
+                  return (
+                    <li>
+                      <ExternalLink href={link.link}>
+                        <BlogIcon style={{fontSize: 30}} />
+                      </ExternalLink>
+                    </li>
+                  ); 
                 default:
                   return (
                     null
