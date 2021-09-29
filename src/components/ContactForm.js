@@ -6,10 +6,12 @@ const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `;
 
 const ContactContainer = styled(FlexExtended)`
   margin-bottom: 80px;
+  width: 100%;
 
   h2 {
       margin: 0 0 29px;
@@ -18,6 +20,10 @@ const ContactContainer = styled(FlexExtended)`
     }
 
   form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
     button {
       background-color: rgb(103, 54, 221);
@@ -37,7 +43,14 @@ const ContactContainer = styled(FlexExtended)`
   }
 `;
 
-const ContactInfo = styled(FlexExtended)``;
+const ContactInfo = styled(FlexExtended)`
+  width: 100%;
+  
+  input {
+    width: 88%;
+    margin: 0 17px 0;
+  }
+`;
 
 const ContactMessage = styled(FlexExtended)``;
 
