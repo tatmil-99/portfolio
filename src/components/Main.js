@@ -64,6 +64,7 @@ const Main = () => {
         <h2><Emoji symbol='🏆' /> Skills <Emoji symbol='🏆' /></h2>
         <Skills />
       </SkillsContainer>
+      <ContactForm />
     </MainDiv>
   );
 }
