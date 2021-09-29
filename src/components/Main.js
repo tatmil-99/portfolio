@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Emoji from './Emoji';
 import ProjectContent from './ProjectContent';
 import Skills from './Skills';
+import ContactForm from './ContactForm';
 
 const FlexExtended = styled.div`
   display: flex;
