@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import { ExternalLink } from 'react-external-link';
 
 const FlexExtended = styled.div`
