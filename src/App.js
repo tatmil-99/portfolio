@@ -20,6 +20,7 @@ const AppContainer = styled(FlexExtended)`
   min-height: 100vh;
   width: 100vw;
   overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
 const ThemeBtnDiv = styled(FlexExtended)`
