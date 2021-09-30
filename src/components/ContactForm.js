@@ -37,7 +37,7 @@ const ContactContainer = styled(FlexExtended)`
       border-radius: 2px;
       padding: 16px 32px;
       cursor: pointer;
-      margin: 16px 16px;
+      margin: 0 16px;
       letter-spacing: .1em;
     }
   }
@@ -45,10 +45,22 @@ const ContactContainer = styled(FlexExtended)`
 
 const ContactInfo = styled(FlexExtended)`
   width: 100%;
-  
+
   input {
-    width: 88%;
-    margin: 0 17px 0;
+    width: 83%;
+    margin: 0 17px 17px;
+    padding: 12.5px;
+    background-color: rgb(47, 48, 59);
+    color: rgb(107, 122, 144);
+    outline: none;
+    border-radius: 2px;
+    font-size: .85em;
+    letter-spacing: .05em;
+    border: 1.5px solid rgb(107, 122, 144);
+
+    ::placeholder {
+      color: rgb(107, 122, 144);
+    }
   }
 `;
 
