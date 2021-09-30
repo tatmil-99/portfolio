@@ -64,7 +64,29 @@ const ContactInfo = styled(FlexExtended)`
   }
 `;
 
-const ContactMessage = styled(FlexExtended)``;
+const ContactMessage = styled(FlexExtended)`
+  width: 100%;
+
+  textarea {
+    width: 83%;
+    margin: 0 17px 17px;
+    padding: 12.5px;
+    background-color: rgb(47, 48, 59);
+    color: rgb(107, 122, 144);
+    outline: none;
+    border-radius: 2px;
+    font-size: .85em;
+    letter-spacing: .05em;
+    border: 1.5px solid rgb(107, 122, 144);
+    height: 95px;
+    resize: none;
+    font-family: inherit;
+
+    ::placeholder {
+      color: rgb(107, 122, 144);
+    }
+  }
+`;
 
 
 const ContactForm = () => {
@@ -77,6 +99,7 @@ const ContactForm = () => {
           <input placeholder='Email address' type='email' name='email' />
         </ContactInfo>
         <ContactMessage>
+          <textarea placeholder='Message' name='message' />
         </ContactMessage>
         <button type='submit'>Submit</button>
       </form>
