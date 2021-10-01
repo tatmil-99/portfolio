@@ -98,16 +98,53 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm();
 
+  const onSubmit = (data) => {
+    const { name, email, message } = data;
+
+    console.log('Name: ', name);
+    console.log('Email: ', email);
+    console.log('Message: ', message);
+  }
+
   return (
     <ContactContainer>
       <h2>Get In Touch!</h2>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <ContactInfo>
-          <input placeholder='Name' type='text' name='name' />
-          <input placeholder='Email address' type='email' name='email' />
+          <input 
+            placeholder='Name' 
+            type='text' 
+            name='name' 
+            {...register('name', {
+              required: { value: true, message: 'Please enter your name' },
+              maxLength: { 
+                value: 30, 
+                message: 'Please Use 30 characters or less' }
+            })}
+          />
+          {errors.name && <p>{errors.name.message}</p>}
+
+          <input 
+            placeholder='Email address' 
+            type='email' 
+            name='email' 
+            {...register('email', {
+              required: true,
+              pattern: 
+                /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+            })}
+          />
+          {errors.email && <p>Please enter a valid email</p>}
         </ContactInfo>
         <ContactMessage>
-          <textarea placeholder='Message' name='message' />
+          <textarea 
+            placeholder='Message' 
+            name='message' 
+            {...register('message', {
+              required: { value: true, message: 'Please enter a message' }
+            })}
+          />
+          {errors.message && <p>{errors.message.message}</p>}
         </ContactMessage>
         <button type='submit'>Submit</button>
       </form>
