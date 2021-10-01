@@ -1,6 +1,7 @@
 // import { style } from '@mui/system';
 import React from 'react';
 import styled from 'styled-components';
+import { useForm } from 'react-hook-form';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -90,6 +91,13 @@ const ContactMessage = styled(FlexExtended)`
 
 
 const ContactForm = () => {
+  const {
+    register, 
+    handleSubmit, 
+    reset,
+    formState: { errors }
+  } = useForm();
+
   return (
     <ContactContainer>
       <h2>Get In Touch!</h2>
