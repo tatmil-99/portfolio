@@ -3,6 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -90,6 +92,11 @@ const ContactMessage = styled(FlexExtended)`
   }
 `;
 
+const MyToastContainer = styled(ToastContainer)`
+  padding: 16px 32px;
+  margin: 0 16px;
+`;
+
 
 const ContactForm = () => {
   const {
@@ -98,6 +105,18 @@ const ContactForm = () => {
     reset,
     formState: { errors }
   } = useForm();
+
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      toastId: 'notifyToast'
+    });
+  }
 
   const onSubmit = async (data) => {
     const { from_name, from_email, message } = data;
@@ -116,6 +135,7 @@ const ContactForm = () => {
         process.env.REACT_APP_USER_ID
       );
       reset();
+      toastifySuccess();
     } catch(e) {
       console.log(e);
     }
@@ -163,6 +183,7 @@ const ContactForm = () => {
         </ContactMessage>
         <button type='submit'>Submit</button>
       </form>
+      <MyToastContainer />
     </ContactContainer>
   );
 }
