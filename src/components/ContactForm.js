@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -98,12 +99,26 @@ const ContactForm = () => {
     formState: { errors }
   } = useForm();
 
-  const onSubmit = (data) => {
-    const { name, email, message } = data;
+  const onSubmit = async (data) => {
+    const { from_name, from_email, message } = data;
 
-    console.log('Name: ', name);
-    console.log('Email: ', email);
-    console.log('Message: ', message);
+    try {
+      const templateParams = {
+        from_name, 
+        from_email,
+        message
+      }
+
+      await emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        templateParams,
+        process.env.REACT_APP_USER_ID
+      );
+      reset();
+    } catch(e) {
+      console.log(e);
+    }
   }
 
   return (
@@ -114,8 +129,8 @@ const ContactForm = () => {
           <input 
             placeholder='Name' 
             type='text' 
-            name='name' 
-            {...register('name', {
+            name='from_name' 
+            {...register('from_name', {
               required: { value: true, message: 'Please enter your name' },
               maxLength: { 
                 value: 30, 
@@ -127,8 +142,8 @@ const ContactForm = () => {
           <input 
             placeholder='Email address' 
             type='email' 
-            name='email' 
-            {...register('email', {
+            name='from_email' 
+            {...register('from_email', {
               required: true,
               pattern: 
                 /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
