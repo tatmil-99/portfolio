@@ -26,6 +26,7 @@ const HeaderDiv = styled(FlexExtended)`
       padding-left: 150px;
       margin-left: 17px;
       font-size: 3.5em;
+      margin-top: 0px;
     }
   }
 
@@ -51,6 +52,7 @@ const BioDiv = styled.div`
 
   @media (min-width: 769px) {
     padding: 0 150px 0;
+    margin-bottom: 0;
   }
 `;
 
@@ -78,7 +80,7 @@ const ResumeBtn = styled.button`
 
   @media (min-width: 769px) {
     width: 50%;
-    margin: 32px 0;
+    margin: 32px 0 0;
   }
 `;
 
@@ -91,14 +93,18 @@ const HeadShot = styled(FlexExtended)`
     margin: 30px 0px 30px 0px;
     height: 12em;
     width: 12em;
+
+    @media (min-width: 769px) {
+      margin: 0;
+    }
   }
 
   @media (min-width: 769px) {
-    /* justify-content: flex-end !important; */
-    /* float: right; */
     position: relative;
-    left: 100%;
-    padding-right: 150px;
+    left: 63%;
+    bottom: 228px;
+    margin-top: 0;
+    /* padding-left: 200px; */
   }
 `;
 
