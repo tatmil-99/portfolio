@@ -23,7 +23,7 @@ const HeaderDiv = styled(FlexExtended)`
     @media (min-width: 769px) {
       font-size: 3.5em;
       font-size: 4.5em;
-      margin: 80px 0 0;
+      margin: 80px 0 32px;
     }
 
     @media (min-width: 769px) {
@@ -50,6 +50,7 @@ const BioDiv = styled.div`
 
   @media (min-width: 769px) {
     padding: 0 150px 0;
+    margin: 0 auto;
   }
 `;
 

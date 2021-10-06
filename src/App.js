@@ -30,7 +30,7 @@ const ThemeBtnDiv = styled(FlexExtended)`
 
   @media (min-width: 769px) {
     padding-right: 75px;
-    margin-top: 80px;
+    margin-top: 102px;
   }
 `;
 
