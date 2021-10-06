@@ -28,7 +28,7 @@ const StoryDiv = styled(FlexExtended)`
 
     @media (min-width: 769px) {
       width: 100%;
-      text-align: left;
+      text-align: center;
     }
   }
 
@@ -61,7 +61,7 @@ const ProjectsContainer = styled(FlexExtended)`
 
       @media (min-width: 769px) {
         width: 100%;
-        text-align: left;
+        text-align: center;
       }
     }
 

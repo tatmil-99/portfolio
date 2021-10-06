@@ -11,7 +11,6 @@ const FlexExtended = styled.div`
 `;
 
 const SkillsContent = styled(FlexExtended)`
-
   ul {
     list-style: none;
     /* word-spacing: 5px; */
@@ -20,7 +19,27 @@ const SkillsContent = styled(FlexExtended)`
     text-align: left;
     padding: 0;
     margin-bottom: 0;
+
+    li {
+      @media (min-width: 769px) {
+        /* display: inline-block;
+        word-spacing: 5px;
+        padding: 15px; */
+        padding: 10px;
+        word-spacing: 10px;
+        font-size: 1.2em;
+        text-transform: uppercase;
+
+        span {
+          padding: 15px;
+        }
+      }
+    }
   }
+
+  /* @media (min-width: 769px) {
+    font-size: 1.2em;
+  } */
 `;
 
 
