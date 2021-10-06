@@ -21,17 +21,14 @@ const HeaderDiv = styled(FlexExtended)`
     font-size: 37px;
 
     @media (min-width: 769px) {
-      /* width: 88%;
-      float: left; */
-      padding-left: 150px;
-      margin-left: 17px;
       font-size: 3.5em;
-      margin-top: 0px;
+      font-size: 4.5em;
+      margin: 80px 0 0;
     }
-  }
 
-  @media (min-width: 769px) {
-    align-items: flex-start;
+    @media (min-width: 769px) {
+      margin-top: 80px;
+    }
   }
 `;
 
@@ -45,20 +42,19 @@ const BioDiv = styled.div`
     font-size: 1em;
 
     @media (min-width: 769px) {
-      text-align: left;
       width: 50%;
+      margin: 19px auto;
+      font-size: 1.2em;
     }
   }
 
   @media (min-width: 769px) {
     padding: 0 150px 0;
-    margin-bottom: 0;
   }
 `;
 
 const ButtonDivs = styled(FlexExtended)`
   @media (min-width: 769px) {
-    align-items: flex-start;
   }
 `;
 
@@ -80,7 +76,8 @@ const ResumeBtn = styled.button`
 
   @media (min-width: 769px) {
     width: 50%;
-    margin: 32px 0 0;
+    margin: 32px 0 262px;
+    font-size: .80em;
   }
 `;
 
@@ -95,16 +92,10 @@ const HeadShot = styled(FlexExtended)`
     width: 12em;
 
     @media (min-width: 769px) {
-      margin: 0;
     }
   }
 
   @media (min-width: 769px) {
-    position: relative;
-    left: 63%;
-    bottom: 228px;
-    margin-top: 0;
-    /* padding-left: 200px; */
   }
 `;
 
