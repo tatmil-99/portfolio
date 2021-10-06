@@ -25,6 +25,11 @@ const StoryDiv = styled(FlexExtended)`
     margin: 0;
     font-size: 32px;
     font-weight: 550;
+
+    @media (min-width: 769px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 
   p {
@@ -33,8 +38,18 @@ const StoryDiv = styled(FlexExtended)`
     line-height: 1.5;
     font-size: 1em;
     margin: 29px 0 80px;
+
+    @media (min-width: 769px) {
+      font-size: 1.2em;
+      margin-top: 55px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    padding: 0 150px 0;
   }
 `;
+
 
 const ProjectsContainer = styled(FlexExtended)`
   margin-bottom: 80px;
@@ -43,7 +58,25 @@ const ProjectsContainer = styled(FlexExtended)`
       margin: 0 0 29px;
       font-size: 32px;
       font-weight: 550;
+
+      @media (min-width: 769px) {
+        width: 100%;
+        text-align: left;
+      }
     }
+
+    @media (min-width: 769px) {
+      padding: 0 150px 0;
+      margin-right: 17px;
+      margin-left: 17px;
+    }
+`;
+
+const ProjectContentWrapper = styled(FlexExtended)`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 `;
 
 const SkillsContainer = styled(ProjectsContainer)``;
@@ -58,7 +91,9 @@ const Main = () => {
       </StoryDiv>
       <ProjectsContainer>
         <h2><Emoji symbol='👉' /> Projects</h2>
-        <ProjectContent />
+        <ProjectContentWrapper>
+          <ProjectContent />
+        </ProjectContentWrapper>
       </ProjectsContainer>
       <SkillsContainer>
         <h2><Emoji symbol='🏆' /> Skills <Emoji symbol='🏆' /></h2>

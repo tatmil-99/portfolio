@@ -29,6 +29,12 @@ const ProjectContentDiv = styled(FlexExtended)`
     margin: 10px 0 10px;
     
   }
+
+  @media (min-width: 769px) {
+    width: 400px;
+    font-size: 1.2em;
+    margin: 55px 17px;
+  }
 `;
 
 
