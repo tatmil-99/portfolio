@@ -25,11 +25,7 @@ const StoryDiv = styled(FlexExtended)`
     margin: 0;
     font-size: 32px;
     font-weight: 550;
-
-    @media (min-width: 769px) {
-      width: 100%;
-      text-align: center;
-    }
+    text-align: center;
   }
 
   p {
@@ -58,11 +54,11 @@ const ProjectsContainer = styled(FlexExtended)`
       margin: 0 0 29px;
       font-size: 32px;
       font-weight: 550;
-
-      @media (min-width: 769px) {
+      text-align: center;
+      /* @media (min-width: 769px) {
         width: 100%;
         text-align: center;
-      }
+      } */
     }
 
     @media (min-width: 769px) {

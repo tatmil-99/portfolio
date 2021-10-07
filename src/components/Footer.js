@@ -47,6 +47,7 @@ const LinksContainer = styled(FlexExtended)`
 
 const CreditsContainer = styled(FlexExtended)`
   padding: 15px;
+  text-align: center;
   
   p {
     margin: 0 0 15px;

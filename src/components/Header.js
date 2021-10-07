@@ -91,13 +91,19 @@ const HeadShot = styled(FlexExtended)`
     margin: 30px 0px 30px 0px;
     height: 12em;
     width: 12em;
+  }
 
-    @media (min-width: 769px) {
+    @media (max-height: 811px) {
+      margin-top: 150px;
+
+      @media (max-height: 736px) {
+        margin-top: 210px;
+      }
+
+      @media (max-height: 568px) {
+        margin-top: 90px;
+      }
     }
-  }
-
-  @media (min-width: 769px) {
-  }
 `;
 
 
