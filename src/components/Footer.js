@@ -15,18 +15,13 @@ const FlexExtended = styled.div`
 `;
 
 const FooterDiv = styled(FlexExtended)`
-  background-color: rgb(47, 48, 59);
   width: 100%;
   margin: 0px 0px 0px;
   color: rgb(107, 122, 144);
 
-    /* @media (max-width: 415px) {
-    margin-bottom: 15px;
-  } */
-  
-  /* p {
-    margin: 50px 50px;
-  } */
+    @media (min-width: 769px) {
+    font-size: 1.2em;
+  }
 `;
 
 const LinksContainer = styled(FlexExtended)`

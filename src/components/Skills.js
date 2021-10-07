@@ -37,9 +37,9 @@ const SkillsContent = styled(FlexExtended)`
     }
   }
 
-  /* @media (min-width: 769px) {
-    font-size: 1.2em;
-  } */
+  @media (min-width: 769px) {
+    margin-top: 26px;
+  }
 `;
 
 

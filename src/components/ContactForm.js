@@ -10,7 +10,7 @@ const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  /* justify-content: center; */
 `;
 
 const ContactContainer = styled(FlexExtended)`
@@ -44,6 +44,16 @@ const ContactContainer = styled(FlexExtended)`
       margin: 0 16px;
       letter-spacing: .1em;
     }
+
+    @media (min-width: 769px) {
+      font-size: 1.2em;
+      margin-top: 55px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    width: 85%;
+    padding: 0 150px 0;
   }
 `;
 
@@ -88,6 +98,10 @@ const ContactMessage = styled(FlexExtended)`
 
     ::placeholder {
       color: rgb(107, 122, 144);
+    }
+
+    @media (min-width: 769px) {
+      padding: 20px 12.5px;
     }
   }
 `;
