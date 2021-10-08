@@ -55,6 +55,11 @@ const ContactContainer = styled(FlexExtended)`
     }
   }
 
+  @media (min-width: 540px) {
+    padding: 0 50px 0;
+    width: 82%;
+  }
+
   @media (min-width: 768px) {
     width: 85%;
     padding: 0 150px 0;

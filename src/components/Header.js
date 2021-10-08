@@ -60,6 +60,10 @@ const BioDiv = styled.div`
       padding: 0 50px 0;
     }
   }
+
+  @media (min-width: 540px) {
+    padding: 0 50px 0;
+  }
 `;
 
 const ButtonDivs = styled(FlexExtended)`
@@ -109,7 +113,7 @@ const HeadShot = styled(FlexExtended)`
       margin-top: 150px;
 
       @media (max-height: 736px) {
-        margin-top: 210px;
+        margin-top: 225px;
       }
 
       @media (max-height: 568px) {

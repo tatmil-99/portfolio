@@ -30,10 +30,16 @@ const ProjectContentDiv = styled(FlexExtended)`
     
   }
 
+  @media (min-width: 540px) {
+    width: 375px;
+  }
+
   @media (min-width: 768px) {
-    width: 400px;
+    width: 438px;
+    /* width: 400px; */
     font-size: 1.2em;
-    margin: 55px 17px;
+    /* margin: 55px 17px; */
+    margin: 17px;
   }
 `;
 

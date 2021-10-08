@@ -48,6 +48,10 @@ const StoryDiv = styled(FlexExtended)`
       padding: 0 50px 0;
     }
   }
+
+  @media (min-width: 540px) {
+    padding: 0 50px 0;
+  }
 `;
 
 
@@ -70,13 +74,19 @@ const ProjectsContainer = styled(FlexExtended)`
       margin-right: 17px;
       margin-left: 17px;
     }
+
 `;
 
 const ProjectContentWrapper = styled(FlexExtended)`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: wrap;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
 `;
 
 const SkillsContainer = styled(ProjectsContainer)``;
