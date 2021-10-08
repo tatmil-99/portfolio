@@ -28,7 +28,7 @@ const ThemeBtnDiv = styled(FlexExtended)`
   justify-content: flex-end;
   margin: 69px 16px 0px 0px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     padding-right: 75px;
     margin-top: 102px;
   }
@@ -53,7 +53,7 @@ const ThemeButton = styled.button`
   cursor: pointer;
   /* margin-right: 17px; */
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: .80em;
   }
 `;

@@ -45,15 +45,19 @@ const ContactContainer = styled(FlexExtended)`
       letter-spacing: .1em;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       font-size: 1.2em;
       margin-top: 55px;
     }
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 85%;
     padding: 0 150px 0;
+
+    @media (min-height: 1024px) {
+      padding: 0 150px 0;
+    }
   }
 `;
 
@@ -100,7 +104,7 @@ const ContactMessage = styled(FlexExtended)`
       color: rgb(107, 122, 144);
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       padding: 20px 12.5px;
     }
   }

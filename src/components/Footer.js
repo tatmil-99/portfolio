@@ -19,7 +19,7 @@ const FooterDiv = styled(FlexExtended)`
   margin: 0px 0px 0px;
   color: rgb(107, 122, 144);
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
     font-size: 1.2em;
   }
 `;

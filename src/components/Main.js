@@ -35,14 +35,18 @@ const StoryDiv = styled(FlexExtended)`
     font-size: 1em;
     margin: 29px 0 80px;
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       font-size: 1.2em;
       margin-top: 55px;
     }
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     padding: 0 150px 0;
+
+    @media (min-height: 1024px) {
+      padding: 0 50px 0;
+    }
   }
 `;
 
@@ -61,7 +65,7 @@ const ProjectsContainer = styled(FlexExtended)`
       } */
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       padding: 0 150px 0;
       margin-right: 17px;
       margin-left: 17px;

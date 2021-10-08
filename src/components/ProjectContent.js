@@ -30,7 +30,7 @@ const ProjectContentDiv = styled(FlexExtended)`
     
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     width: 400px;
     font-size: 1.2em;
     margin: 55px 17px;

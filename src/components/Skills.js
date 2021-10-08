@@ -21,7 +21,7 @@ const SkillsContent = styled(FlexExtended)`
     margin-bottom: 0;
 
     li {
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         /* display: inline-block;
         word-spacing: 5px;
         padding: 15px; */
@@ -37,7 +37,7 @@ const SkillsContent = styled(FlexExtended)`
     }
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin-top: 26px;
   }
 `;
