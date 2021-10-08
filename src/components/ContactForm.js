@@ -29,6 +29,10 @@ const ContactContainer = styled(FlexExtended)`
     align-items: center;
     width: 100%;
 
+    p {
+      margin: 0 0 22px;
+    }
+
     button {
       background-color: rgb(103, 54, 221);
       font-size: .70em;
@@ -175,7 +179,7 @@ const ContactForm = () => {
                 message: 'Please Use 30 characters or less' }
             })}
           />
-          {errors.name && <p>{errors.name.message}</p>}
+          {errors.from_name && <p>{errors.from_name.message}</p>}
 
           <input 
             placeholder='Email address' 
@@ -187,7 +191,7 @@ const ContactForm = () => {
                 /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
             })}
           />
-          {errors.email && <p>Please enter a valid email</p>}
+          {errors.from_email && <p>Please enter a valid email</p>}
         </ContactInfo>
         <ContactMessage>
           <textarea 
