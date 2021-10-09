@@ -79,12 +79,12 @@ const Footer = () => {
       <LinksContainer>
         <ul>
           {
-            socialLinks.map((link) => {
+            socialLinks.map((link, index) => {
               switch (link.account) {
                 case 'GitHub':
 
                   return (
-                    <li>
+                    <li key={index}>
                       <ExternalLink href={link.link}>
                         <MyGitHubIcon style={{fontSize: 30}} />
                       </ExternalLink>
@@ -93,7 +93,7 @@ const Footer = () => {
                 case 'Twitter':
 
                   return (
-                    <li>
+                    <li key={index}>
                       <ExternalLink href={link.link}>
                         <MyTwitterIcon style={{fontSize: 30}} />
                       </ExternalLink>
@@ -102,7 +102,7 @@ const Footer = () => {
                 case 'LinkedIn':
 
                   return (
-                    <li>
+                    <li key={index}>
                       <ExternalLink href={link.link}>
                         <MyLinkedInIcon style={{fontSize: 30}} />
                       </ExternalLink>
@@ -111,7 +111,7 @@ const Footer = () => {
                 case 'Blog':
 
                   return (
-                    <li>
+                    <li key={index}>
                       <ExternalLink href={link.link}>
                         <BlogIcon style={{fontSize: 30}} />
                       </ExternalLink>

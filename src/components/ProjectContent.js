@@ -38,11 +38,11 @@ const ProjectContentDiv = styled(FlexExtended)`
 const ProjectContent = () => {
 
   return (
-    projects.map((item) => {
+    projects.map((item, index) => {
       return (
-        <ProjectContentDiv>
+        <ProjectContentDiv key={index}> 
           <h3>{item.title}</h3>
-          <ProjectDescription
+          <ProjectDescription 
             description={item.description}
             listItem={item.technologies}
           />

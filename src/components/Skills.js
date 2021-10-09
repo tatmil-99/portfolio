@@ -44,10 +44,10 @@ const Skills = () => {
     <SkillsContent>
       <ul>
         {
-          skills.map((skill) => {
+          skills.map((skill, index) => {
 
             return (
-              <li><Emoji symbol='✅' /> {skill}</li>
+              <li key={index}><Emoji symbol='✅' /> {skill}</li>
             );
           })
         }

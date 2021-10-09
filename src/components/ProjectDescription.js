@@ -36,10 +36,10 @@ const ProjectDescription = (props) => {
       <p className='description'>{props.description}</p>
       <ul>
         {
-          props.listItem.map((i) => {
+          props.listItem.map((i, index) => {
             
             return (
-              <li>{i}</li>
+              <li key={index}>{i}</li>
             );
           })
         }
