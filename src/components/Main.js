@@ -8,12 +8,10 @@ import ContactForm from './ContactForm';
 const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 `;
 
 const MainDiv = styled(FlexExtended)`
-  /* background-color: rgb(255, 255, 255); */
   height: 50%;
   width: 100%;
 `;
@@ -41,16 +39,16 @@ const StoryDiv = styled(FlexExtended)`
     }
   }
 
+  @media (min-width: 540px) {
+    padding: 0 50px 0;
+  }
+
   @media (min-width: 768px) {
     padding: 0 150px 0;
 
-    @media (min-height: 1024px) {
+    @media (min-height: 1024px) and (max-height: 1025px) {
       padding: 0 50px 0;
     }
-  }
-
-  @media (min-width: 540px) {
-    padding: 0 50px 0;
   }
 `;
 
@@ -63,10 +61,6 @@ const ProjectsContainer = styled(FlexExtended)`
       font-size: 32px;
       font-weight: 550;
       text-align: center;
-      /* @media (min-width: 769px) {
-        width: 100%;
-        text-align: center;
-      } */
     }
 
     @media (min-width: 768px) {
@@ -80,8 +74,6 @@ const ProjectsContainer = styled(FlexExtended)`
 const ProjectContentWrapper = styled(FlexExtended)`
   @media (min-width: 769px) {
     flex-direction: row;
-    /* justify-content: space-between; */
-    /* justify-content: space-evenly; */
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;

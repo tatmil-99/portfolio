@@ -10,7 +10,6 @@ const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 `;
 
 const ContactContainer = styled(FlexExtended)`
@@ -63,10 +62,6 @@ const ContactContainer = styled(FlexExtended)`
   @media (min-width: 768px) {
     width: 85%;
     padding: 0 150px 0;
-
-    @media (min-height: 1024px) {
-      padding: 0 150px 0;
-    }
   }
 `;
 

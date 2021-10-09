@@ -13,8 +13,6 @@ const FlexExtended = styled.div`
 const SkillsContent = styled(FlexExtended)`
   ul {
     list-style: none;
-    /* word-spacing: 5px; */
-    /* letter-spacing: .1em; */
     line-height: 1.5;
     text-align: left;
     padding: 0;
@@ -22,9 +20,6 @@ const SkillsContent = styled(FlexExtended)`
 
     li {
       @media (min-width: 768px) {
-        /* display: inline-block;
-        word-spacing: 5px;
-        padding: 15px; */
         padding: 10px;
         word-spacing: 10px;
         font-size: 1.2em;

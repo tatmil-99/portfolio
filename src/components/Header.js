@@ -11,7 +11,6 @@ const FlexExtended = styled.div`
 `;
 
 const HeaderDiv = styled(FlexExtended)`
-  /* background-color: rgb(255, 255, 255); */
   width: 100%;
   margin: 70px 0px 0px 0px;
 
@@ -52,24 +51,21 @@ const BioDiv = styled.div`
     }
   }
 
+  @media (min-width: 540px) {
+    padding: 0 50px 0;
+  }
+
   @media (min-width: 768px) {
     padding: 0 150px 0;
     margin: 0 auto;
 
-    @media (min-height: 1024px) {
+    @media (max-height: 1024px) {
       padding: 0 50px 0;
     }
   }
-
-  @media (min-width: 540px) {
-    padding: 0 50px 0;
-  }
 `;
 
-const ButtonDivs = styled(FlexExtended)`
-  @media (min-width: 769px) {
-  }
-`;
+const ButtonDivs = styled(FlexExtended)``;
 
 const ResumeBtn = styled.button`
   background-color: rgb(103, 54, 221);
@@ -123,6 +119,11 @@ const HeadShot = styled(FlexExtended)`
     
     @media (min-height: 1024px) {
       margin-top: 130px;
+    }
+
+    @media (min-height: 1366px) {
+      margin-top: 0px;
+      margin-bottom: 200px;
     }
 `;
 

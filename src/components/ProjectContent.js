@@ -7,7 +7,6 @@ import {projects} from '../data';
 const FlexExtended = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 `;
 
@@ -16,18 +15,12 @@ const ProjectContentDiv = styled(FlexExtended)`
   box-sizing: border-box;
   margin: 10px 17px;
   width: 90vw;
-  /* height: 400px; */
   border-radius: 2px;
   padding: 25px 25px;
   
   h3 {
-    /* color: rgb(255, 255, 255); */
-    /* color: rgb(107, 122, 144); */
     color: rgb(103, 54, 221);
-    /* color: rgb(252,15,192); */
-    /* border-bottom: 2px solid rgb(252,15,192); */
     margin: 10px 0 10px;
-    
   }
 
   @media (min-width: 540px) {
@@ -36,9 +29,7 @@ const ProjectContentDiv = styled(FlexExtended)`
 
   @media (min-width: 768px) {
     width: 438px;
-    /* width: 400px; */
     font-size: 1.2em;
-    /* margin: 55px 17px; */
     margin: 17px;
   }
 `;

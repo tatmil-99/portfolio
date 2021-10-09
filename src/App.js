@@ -35,8 +35,6 @@ const ThemeBtnDiv = styled(FlexExtended)`
 `;
 
 const ThemeButton = styled.button`
-  /* width: 28%; */
-  /* width: 105px; */
   width: 8em;
   vertical-align: center;
   text-align: center;
@@ -51,7 +49,6 @@ const ThemeButton = styled.button`
   font-size: .70em;
   font-weight: 500;
   cursor: pointer;
-  /* margin-right: 17px; */
 
   @media (min-width: 768px) {
     font-size: .80em;
