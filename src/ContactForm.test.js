@@ -5,6 +5,6 @@ describe('ContactForm', () => {
   test('renders Form component', () => {
     render(<ContactForm />);
 
-    screen.debug();
+    screen.getByRole('textbox');
   });
 });
