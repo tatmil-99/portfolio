@@ -172,6 +172,7 @@ const ContactForm = () => {
             placeholder='Name' 
             type='text' 
             name='from_name' 
+            aria-label='Name'
             {...register('from_name', {
               required: { value: true, message: 'Please enter your name' },
               maxLength: { 
@@ -185,6 +186,7 @@ const ContactForm = () => {
             placeholder='Email address' 
             type='email' 
             name='from_email' 
+            aria-label='Email'
             {...register('from_email', {
               required: true,
               pattern: 
@@ -197,6 +199,7 @@ const ContactForm = () => {
           <textarea 
             placeholder='Message' 
             name='message' 
+            aria-label='Message'
             {...register('message', {
               required: { value: true, message: 'Please enter a message' }
             })}
