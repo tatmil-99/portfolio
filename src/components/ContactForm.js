@@ -1,10 +1,11 @@
 // import { style } from '@mui/system';
-import React from 'react';
+import React, { useState} from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import { Satellite } from '@mui/icons-material';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -121,6 +122,10 @@ const MyToastContainer = styled(ToastContainer)`
 
 
 const ContactForm = () => {
+  const [state, setState] = useState({
+    name: '',
+  })
+
   const {
     register, 
     handleSubmit, 
@@ -142,6 +147,8 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     const { from_name, from_email, message } = data;
+
+    setState({...state, name: from_name})
 
     try {
       const templateParams = {
@@ -173,6 +180,7 @@ const ContactForm = () => {
             type='text' 
             name='from_name' 
             aria-label='Name'
+            value={state.name}
             {...register('from_name', {
               required: { value: true, message: 'Please enter your name' },
               maxLength: { 
@@ -187,6 +195,7 @@ const ContactForm = () => {
             type='email' 
             name='from_email' 
             aria-label='Email'
+            value=''
             {...register('from_email', {
               required: true,
               pattern: 
@@ -200,6 +209,7 @@ const ContactForm = () => {
             placeholder='Message' 
             name='message' 
             aria-label='Message'
+            value=''
             {...register('message', {
               required: { value: true, message: 'Please enter a message' }
             })}
