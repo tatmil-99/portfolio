@@ -122,10 +122,6 @@ const MyToastContainer = styled(ToastContainer)`
 
 
 const ContactForm = () => {
-  const [state, setState] = useState({
-    name: '',
-  })
-
   const {
     register, 
     handleSubmit, 
@@ -147,8 +143,6 @@ const ContactForm = () => {
 
   const onSubmit = async (data) => {
     const { from_name, from_email, message } = data;
-
-    setState({...state, name: from_name})
 
     try {
       const templateParams = {
@@ -180,7 +174,6 @@ const ContactForm = () => {
             type='text' 
             name='from_name' 
             aria-label='Name'
-            value={state.name}
             {...register('from_name', {
               required: { value: true, message: 'Please enter your name' },
               maxLength: { 
@@ -195,7 +188,6 @@ const ContactForm = () => {
             type='email' 
             name='from_email' 
             aria-label='Email'
-            value=''
             {...register('from_email', {
               required: true,
               pattern: 
@@ -209,7 +201,6 @@ const ContactForm = () => {
             placeholder='Message' 
             name='message' 
             aria-label='Message'
-            value=''
             {...register('message', {
               required: { value: true, message: 'Please enter a message' }
             })}

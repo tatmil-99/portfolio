@@ -1,8 +1,7 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen, } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import ContactForm from './components/ContactForm';
-import { act } from 'react-dom/test-utils';
 
 describe('ContactForm', () => {
   test('renders Form component', () => {
@@ -14,13 +13,8 @@ describe('ContactForm', () => {
 
     expect(nameInput).toBeInTheDocument();
     expect(emailInput).toBeInTheDocument();
+    expect(submitBtn).toBeInTheDocument();
 
-    fireEvent.change(nameInput, {
-      target: { value: 'Tate' },
-    });
-
-    fireEvent.click(submitBtn);
-    
     screen.debug();
   });
 });
