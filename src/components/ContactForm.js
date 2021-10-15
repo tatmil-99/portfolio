@@ -1,11 +1,9 @@
-// import { style } from '@mui/system';
-import React, { useState} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import { Satellite } from '@mui/icons-material';
 
 const FlexExtended = styled.div`
   display: flex;
