@@ -2,7 +2,7 @@
 
 ### How I Worked On This Project
 
-My goal was to develop project planning skills
+My goal was to develop project planning skills.
 
 I understood:
 
