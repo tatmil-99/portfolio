@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# React Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### How I Worked On This Project
 
-## Available Scripts
+My goal was to develop project planning skills
 
-In the project directory, you can run:
+I understood:
 
-### `npm start`
+- I understood the problem my project was trying to solve, which was to develop
+  a site that allowed users to view my resume and portfolio. I knew that I also
+  wanted users to know my background, and I knew I wanted them to be able to contact
+  me easily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I planned:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- I drew out component structure.
+- I sketched a rough draft of how I wanted UI to look.
+- I knew that I wanted a UI and some light user interaction.
+- I knew I would recieve user input and return output for my form.
+- I tackled problems in a componentized manner, which allowed me to logically break
+  up problems and not just attempt to solve the whole project in one go.
 
-### `npm test`
+I divided:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- I didn't tackle the whole project head on, I tried to better develop my problem
+  solving skills and work on problems by chunking -- that is breaking up large
+  problems into smaller ones.
 
-### `npm run build`
+### Why I Built This Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The main reason I built this project was because I was tired of getting ghosted from
+jobs I would apply to. After careful evaluation, I decided that maybe
+one of the leading reasons was due to my current personal website. It was a template
+that I had found and changed some of the code to. After developing my new site for a while,
+I quickly realized that my first website was a red flag. It was very obviously a template and
+i'm sure employers don't like seeing that from Front End Developer applicants. I also wanted
+a personal brand so to speak, something that showed who I was and was fully custom and built
+by me.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### What I Learned
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I think I learned more building this project than I learned throughout my entire bootcamp.
+Some of the things I will undoubtedly lose in memory, but nonetheless I learned a lot --
+especially how hard developing projects from scratch is. I spent more time planning than I spent coding. That was a muscle I hadn't really worked yet being caught in tutorial purgatory for so
+long. I especially learned that coding is more planning than coding, which was/is weird to me
+still. Darn stereotypes!
 
-### `npm run eject`
+### Tools and Tech Used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- HTML, CSS, StyledComponents
+- Material UI
+- JavaScript
+- React
+- EmailJS API
+- Git
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Form submission and validation
+- Mobile responsiveness
+- Dark and light mode
+- External links
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Available scripts
 
-## Learn More
+My project is not yet hosted as it is incomplete, but in the project directory you can run `npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Name          | Email              | Twitter  |
+| ------------- | ------------------ | -------- |
+| Tatien Miller | tatmil99@gmail.com | @TatienM |
