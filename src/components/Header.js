@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
-import user from '../assets/user.png';
+import headshot from '../assets/headshot.jpg';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -24,7 +24,6 @@ const HeaderDiv = styled(FlexExtended)`
       font-size: 4.5em;
       margin: 80px 0 32px;
     }
-
     @media (min-width: 768px) {
       margin-top: 80px;
     }
@@ -44,7 +43,6 @@ const BioDiv = styled.div`
       width: 50%;
       margin: 19px auto;
       font-size: 1.2em;
-
       @media (min-height: 1024px) {
         width: 75%;
       }
@@ -54,11 +52,9 @@ const BioDiv = styled.div`
   @media (min-width: 540px) {
     padding: 0 50px 0;
   }
-
   @media (min-width: 768px) {
     padding: 0 150px 0;
     margin: 0 auto;
-
     @media (max-height: 1024px) {
       padding: 0 50px 0;
     }
@@ -87,7 +83,6 @@ const ResumeBtn = styled.button`
     width: 50%;
     margin: 32px 0 262px;
     font-size: .80em;
-
     @media (min-height: 1024px) {
       width: 75%;
     }
@@ -97,30 +92,45 @@ const ResumeBtn = styled.button`
 const HeadShot = styled(FlexExtended)`
   flex-direction: row;
   justify-content: center;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 17px 50px 17px;
 
   img {
-    margin: 30px 0px 30px 0px;
-    height: 12em;
-    width: 12em;
+    margin: 30px 0px 30px 0px; 
+    /* height: 12em;
+    width: 12em;  */
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    @media (min-height: 1024px) {
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 150px 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    @media (max-height: 1024px) {
+      padding: 0 50px 0;
+    }
   }
 
     @media (max-height: 811px) {
       margin-top: 150px;
-
       @media (max-height: 736px) {
         margin-top: 225px;
       }
-
       @media (max-height: 568px) {
         margin-top: 90px;
       }
     }
-    
     @media (min-height: 1024px) {
       margin-top: 130px;
     }
-
     @media (min-height: 1366px) {
       margin-top: 0px;
       margin-bottom: 200px;
@@ -147,7 +157,7 @@ const Header = () => {
         </ButtonDivs>
       </BioDiv>
       <HeadShot>
-        <img alt='headshot of me' src={user} />
+        <img alt='headshot of me' src={headshot} />
       </HeadShot>
     </HeaderDiv>
   );

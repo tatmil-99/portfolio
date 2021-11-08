@@ -42,10 +42,8 @@ const StoryDiv = styled(FlexExtended)`
   @media (min-width: 540px) {
     padding: 0 50px 0;
   }
-
   @media (min-width: 768px) {
     padding: 0 150px 0;
-
     @media (min-height: 1024px) and (max-height: 1025px) {
       padding: 0 50px 0;
     }
