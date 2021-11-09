@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
-// import headshot from '../assets/headshot.jpg';
-// const imagemin = require('imagemin');
-// const output = '../assets/optimisedImg';
+import headshot from '../assets/headshot-compressed.jpg';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -101,9 +99,13 @@ const HeadShot = styled(FlexExtended)`
     /* height: 12em;*/
     /* width: 12em;   */
     /* max-width: 90vw; */
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%;
+    height: 90%; */
     border-radius: 2px;
+
+    /* @media (min-width: 320px) {
+      width: 375px;
+    } */
 
     @media (min-width: 768px) {
       width: 50%;
@@ -162,9 +164,11 @@ const Header = () => {
       <HeadShot>
         <img 
           alt='headshot of me' 
-          // src={headshot} 
-          // srcSet={`${headshot} 375w`}
-          sizes='(min-width: 320px) 375px'
+          src={headshot} 
+          srcSet={`${headshot} 300w`}
+          sizes='(min-width: 320px) 300px'
+          height='auto'
+          // width='300'
         />
       </HeadShot>
     </HeaderDiv>
