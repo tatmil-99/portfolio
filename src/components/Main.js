@@ -17,10 +17,10 @@ const MainDiv = styled(FlexExtended)`
 `;
 
 const StoryDiv = styled(FlexExtended)`
-  margin: 0px 17px 0px;
+  margin: 10px 17px 0px;
 
   h2 {
-    margin: 0;
+    margin: 16px 0 0;
     font-size: 32px;
     font-weight: 550;
     text-align: center;
