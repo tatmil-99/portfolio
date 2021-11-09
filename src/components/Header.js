@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import Emoji from './Emoji';
-import headshot from '../assets/headshot.jpg';
+// import headshot from '../assets/headshot.jpg';
+// const imagemin = require('imagemin');
+// const output = '../assets/optimisedImg';
 
 const FlexExtended = styled.div`
   display: flex;
@@ -96,8 +98,9 @@ const HeadShot = styled(FlexExtended)`
 
   img {
     margin: 30px 0px 30px 0px; 
-    /* height: 12em;
-    width: 12em;  */
+    /* height: 12em;*/
+    /* width: 12em;   */
+    /* max-width: 90vw; */
     max-width: 100%;
     height: auto;
     border-radius: 2px;
@@ -157,7 +160,12 @@ const Header = () => {
         </ButtonDivs>
       </BioDiv>
       <HeadShot>
-        <img alt='headshot of me' src={headshot} />
+        <img 
+          alt='headshot of me' 
+          // src={headshot} 
+          // srcSet={`${headshot} 375w`}
+          sizes='(min-width: 320px) 375px'
+        />
       </HeadShot>
     </HeaderDiv>
   );
