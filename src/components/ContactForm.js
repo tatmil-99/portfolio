@@ -6,7 +6,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import{ init } from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
 init("REACT_APP_USER_ID");
-require('dotenv').config()
 
 const FlexExtended = styled.div`
   display: flex;
