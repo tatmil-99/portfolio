@@ -142,7 +142,6 @@ const ContactForm = () => {
 
   const onSubmit = async (data, e) => {
     const { from_name, from_email, message } = data;
-    e.preventDefault();
 
     try {
       const templateParams = {
