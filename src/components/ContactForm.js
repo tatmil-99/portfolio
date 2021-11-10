@@ -156,7 +156,7 @@ const ContactForm = () => {
         // process.env.REACT_APP_TEMPLATE_ID,
         'contact_form',
         templateParams,
-        process.env.REACT_APP_USER_ID
+        // process.env.REACT_APP_USER_ID
       );
       reset();
       toastifySuccess();
