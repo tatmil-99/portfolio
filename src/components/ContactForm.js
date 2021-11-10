@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
-import{ init } from 'emailjs-com';
+// import{ init } from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
-init("REACT_APP_USER_ID");
+// init("REACT_APP_USER_ID");
 
 const FlexExtended = styled.div`
   display: flex;
