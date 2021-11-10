@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import{ init } from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
-import apikeys from '../apikeys';
 init("REACT_APP_USER_ID");
 
 const FlexExtended = styled.div`
@@ -152,13 +151,10 @@ const ContactForm = () => {
       }
 
       await emailjs.send(
-        // process.env.REACT_APP_SERVICE_ID,
-        // process.env.REACT_APP_TEMPLATE_ID,
-        apikeys.SERVICE_ID,
-        apikeys.TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        apikeys.USER_ID
-        // process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_USER_ID
       );
       reset();
       toastifySuccess();
