@@ -151,8 +151,10 @@ const ContactForm = () => {
       }
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        // process.env.REACT_APP_SERVICE_ID,
+        'contact_service',
+        // process.env.REACT_APP_TEMPLATE_ID,
+        'contact_form',
         templateParams,
         process.env.REACT_APP_USER_ID
       );
