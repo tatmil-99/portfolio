@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
-// import{ init } from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
-// init("REACT_APP_USER_ID");
 
 const FlexExtended = styled.div`
   display: flex;
@@ -151,10 +149,10 @@ const ContactForm = () => {
       }
 
       await emailjs.send(
-        REACT_APP_SERVICE_ID,
-        REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         templateParams,
-        REACT_APP_USER_ID
+        process.env.REACT_APP_USER_ID
       );
       reset();
       toastifySuccess();
