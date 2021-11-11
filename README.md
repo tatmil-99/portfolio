@@ -58,12 +58,13 @@ still. Darn stereotypes!
 
 - Form submission and validation
 - Mobile responsiveness
+- Mobile-first design
 - Dark and light mode
 - External links
 
-### Available scripts
+### How To View
 
-My project is not yet hosted as it is incomplete, but in the project directory you can run `npm start`
+My project can be viewed at https://tatienmiller.netlify.app/ -- P.S. I think it looks best on a mobile device
 
 | Name          | Email              | Twitter  |
 | ------------- | ------------------ | -------- |
