@@ -151,13 +151,10 @@ const ContactForm = () => {
       }
 
       await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        // 'contact_service',
-        process.env.REACT_APP_TEMPLATE_ID,
-        // 'contact_form',
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
         templateParams,
-        process.env.REACT_APP_USER_ID
-        // 'user_oKL1r6zuxCWVGqRNxjrNv'
+        REACT_APP_USER_ID
       );
       reset();
       toastifySuccess();
