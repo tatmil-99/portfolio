@@ -61,7 +61,7 @@ still. Darn stereotypes!
 - Form validation
 - Mobile responsiveness
 - Mobile-first design
-- Dark:last_quarter_moon_with_face: and light:sun_with_face: mode
+- Dark:last_quarter_moon_with_face: / light:sun_with_face: mode
 - External links
 
 ### How To View
