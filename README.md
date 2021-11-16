@@ -53,18 +53,20 @@ still. Darn stereotypes!
 - React
 - EmailJS API
 - Git
+- Jest
 
 ### Features
 
-- Form submission and validation
+- Form submission
+- Form validation
 - Mobile responsiveness
 - Mobile-first design
-- Dark and light mode
+- Dark:moon: and light:sun: mode
 - External links
 
 ### How To View
 
-My project can be viewed at https://tatienmiller.netlify.app/ -- P.S. I think it looks best on a mobile device
+My project can be viewed at https://tatienmiller.com/ -- P.S. I think it looks best on a mobile device
 
 | Name          | Email              | Twitter  |
 | ------------- | ------------------ | -------- |
