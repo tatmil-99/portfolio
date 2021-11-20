@@ -16,16 +16,3 @@ body {
   overscroll-behavior-x: none;
   overflow-x: hidden;
 }
-
-/* #notifyToast {
-  font-size: 0.7em;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: none;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  cursor: pointer;
-  letter-spacing: 0.1em;
-} */
