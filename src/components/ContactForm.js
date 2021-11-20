@@ -114,14 +114,13 @@ const ContactMessage = styled(FlexExtended)`
 
 const MyToastContainer = styled(ToastContainer)`
   padding: 16px 32px;
-  /* margin: 0 16px; */
 
   #notifyToast {
     font-size: 0.7em;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    border: 5px solid black;
+    border: none;
     text-align: center;
     border-radius: 2px;
     padding: 16px;
