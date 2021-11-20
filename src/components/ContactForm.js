@@ -121,7 +121,7 @@ const MyToastContainer = styled(ToastContainer)`
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    border: none;
+    border: 5px solid black;
     text-align: center;
     border-radius: 2px;
     padding: 16px;
