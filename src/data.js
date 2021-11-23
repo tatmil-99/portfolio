@@ -34,9 +34,9 @@ let projects = [
 ]
 
 let skills = [
-  'JavaScript', 'Python', 'React', 'Redux', 'Node.js', 
-  'PostgreSQL', 'SQL', 'Sequelize', 'HTML', 'CSS', 
-  'StyledComponents', 'Git', 'Jest', 'API\'s', 'AJAX'
+  'JavaScript', 'Python', 'API\'s', 'AJAX', 'React', 'Redux', 
+  'Node.js', 'Express', 'PostgreSQL', 'SQL', 'Sequelize', 
+  'HTML', 'CSS', 'StyledComponents', 'Git', 'Jest', 
 ]
 
 let socialLinks = [
