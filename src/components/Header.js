@@ -114,7 +114,7 @@ const Header = () => {
         </p>
         <ButtonDivs>
           <ResumeBtn onClick={(e) => {e.preventDefault();
-            window.open('https://docs.google.com/document/d/1NjrPNY6_sjMBF_IkvJ-zgtfdAO2cRcwTrAUkq8JIk6I/edit?usp=sharing');
+            window.open('https://docs.google.com/document/d/1Rc0eANxTXns8bPQ4K8rfNA4wjmetP0lMNr4yWouJKYk/edit?usp=sharing');
             }}>My Resume
           </ResumeBtn>
         </ButtonDivs>
